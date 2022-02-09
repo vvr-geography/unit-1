@@ -24,7 +24,7 @@ function cities() {
 			city: 'Superior',
 			population: 27244
 		}
-	]
+	];
 
 	//create element table
 	var table = document.createElement("table");
@@ -33,7 +33,7 @@ function cities() {
 	var headerRow = document.createElement("tr");
 
 	//label the header row
-	headerRow.insertAdjacentHTML("beforeend", "<th>City</th><th>Population</th>")
+	headerRow.insertAdjacentHTML("beforeend", "<th>City</th><th>Population</th>");
 
 	//add the row to the table
 	table.appendChild(headerRow);
@@ -96,7 +96,7 @@ function addEvents() {
 
 	//begin the random color generator with the mouseover event listener
 	function mouseOver() {
-		
+
 		//define table using query selector in the document
 		var table = document.querySelector("table");
 
@@ -127,7 +127,7 @@ function addEvents() {
 
 	//begin the clickme function
 	function clickme() {
-		
+
 		//generate popup alert
 		alert('Hey, you clicked me!');
 
@@ -137,8 +137,6 @@ function addEvents() {
 	document.querySelector("table").addEventListener("click", clickme)
 
 }
-
-
 
 //call the intialize function after the DOM has loaded
 document.addEventListener('DOMContentLoaded', initialize)
