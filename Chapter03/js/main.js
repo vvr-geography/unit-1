@@ -171,5 +171,5 @@ function debugAjax() {
         })
 };
 
-//call the intialize function after the DOM has loaded
+//call the intialize function after the DOM has loaded and final push
 document.addEventListener('DOMContentLoaded', initialize)
