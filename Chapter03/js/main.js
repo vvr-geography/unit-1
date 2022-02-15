@@ -50,7 +50,7 @@ function cities() {
     };
 
     //connect table in js file to #myDiv in html file
-    document.querySelector("#myDiv").appendChild(table);
+    document.querySelector("#myDiv").insertAdjacentElement('beforeend', table);
 
     //run add columns function
     addColumns(cityPop);
